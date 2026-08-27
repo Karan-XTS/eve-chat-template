@@ -1,0 +1,20 @@
+version: 2
+
+sources:
+  - name: bronze_layer
+    schema: BRONZE_LAYER
+    tables:
+      - name: mst_tblusers
+        identifier: MST_TBLUSERS
+
+  - name: bronze_layer_odm
+    schema: BRONZE_LAYER_ODM
+    tables:
+      - name: mst_tbldepartment
+        identifier: MST_TBLDEPARTMENT
+      - name: mst_tbluser_processroles
+        identifier: MST_TBLUSER_PROCESSROLES
+
+models:
+  - name: stg_users
+    description: Cleans user attributes and enriches users with department and process-role details.
