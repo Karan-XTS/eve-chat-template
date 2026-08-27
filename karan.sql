@@ -1,0 +1,1 @@
+select * from `GOLD_LAYER.GOLD_REGION_USER_MAPPING`
