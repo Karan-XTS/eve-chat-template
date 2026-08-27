@@ -1,6 +1,9 @@
 
 -- Use the `ref` function to select from other models
 
-select *
-from {{ ref('my_first_dbt_model') }}
-where id = 1
+    SELECT
+        p.RECORD_ID,
+        p.LEAD_ID,
+        TRIM(INITCAP(REGEXP_REPLACE(LEAD_PATTERNS, r'[^A-Za-z0-9,]+', ' '))) AS LEAD_PATTERNS,
+        CURRENT_TIMESTAMP() AS SOURCE_LOADED_AT
+    FROM `BRONZE_LAYER.TBLLEADS_PATTERN` p;
