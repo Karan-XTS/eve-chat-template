@@ -1,38 +1,38 @@
 version: 2
 
 sources:
-  - name: bronze_layer
+  - name: BRONZE_LAYER
     schema: BRONZE_LAYER
     tables:
-      - name: mst_tblusers
+      - name: MST_TBLUSERS
         identifier: MST_TBLUSERS
 
-      - name: tblleads_masterlist
+      - name: TBLLEADS_MASTERLIST
         identifier: TBLLEADS_MASTERLIST
-      - name: mst_tblsalutation
+      - name: MST_TBLSALUTATION
         identifier: MST_TBLSALUTATION
-      - name: mst_tbljoblevel
+      - name: MST_TBLJOBLEVEL
         identifier: MST_TBLJOBLEVEL
-      - name: mst_tbljobfunction
+      - name: MST_TBLJOBFUNCTION
         identifier: MST_TBLJOBFUNCTION
-      - name: mst_tbladdresstag
+      - name: MST_TBLADDRESSTAG
         identifier: MST_TBLADDRESSTAG
-      - name: mst_tbllocationelements
+      - name: MST_TBLLOCATIONELEMENTS
         identifier: MST_TBLLOCATIONELEMENTS
-      - name: mst_tblstandardindustry
+      - name: MST_TBLSTANDARDINDUSTRY
         identifier: MST_TBLSTANDARDINDUSTRY
-      - name: mst_tblemployeesize
+      - name: MST_TBLEMPLOYEESIZE
         identifier: MST_TBLEMPLOYEESIZE
-      - name: mst_tblrevenuesize
+      - name: MST_TBLREVENUESIZE
         identifier: MST_TBLREVENUESIZE
 
 
-  - name: bronze_layer_odm
+  - name: BRONZE_LAYER_ODM
     schema: BRONZE_LAYER_ODM
     tables:
-      - name: mst_tbldepartment
+      - name: MST_TBLDEPARTMENT
         identifier: MST_TBLDEPARTMENT
-      - name: mst_tbluser_processroles
+      - name: MST_TBLUSER_PROCESSROLES
         identifier: MST_TBLUSER_PROCESSROLES
 
 models:

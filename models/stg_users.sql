@@ -58,7 +58,7 @@ with
             trim(r.prole_desc) as process_role_desc
         from user_base as u
         join
-            {{ source("BRONZE_LEVEL_ODM", "mst_tbldepartment") }} as d
+            {{ source("BRONZE_LEVEL", "mst_tbldepartment") }} as d
             on u.department_id = d.department_id
         join
             {{ source("BRONZE_LEVEL_ODM", "mst_tbluser_processroles") }} as r
