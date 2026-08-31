@@ -7,6 +7,26 @@ sources:
       - name: mst_tblusers
         identifier: MST_TBLUSERS
 
+      - name: tblleads_masterlist
+        identifier: TBLLEADS_MASTERLIST
+      - name: mst_tblsalutation
+        identifier: MST_TBLSALUTATION
+      - name: mst_tbljoblevel
+        identifier: MST_TBLJOBLEVEL
+      - name: mst_tbljobfunction
+        identifier: MST_TBLJOBFUNCTION
+      - name: mst_tbladdresstag
+        identifier: MST_TBLADDRESSTAG
+      - name: mst_tbllocationelements
+        identifier: MST_TBLLOCATIONELEMENTS
+      - name: mst_tblstandardindustry
+        identifier: MST_TBLSTANDARDINDUSTRY
+      - name: mst_tblemployeesize
+        identifier: MST_TBLEMPLOYEESIZE
+      - name: mst_tblrevenuesize
+        identifier: MST_TBLREVENUESIZE
+
+
   - name: bronze_layer_odm
     schema: BRONZE_LAYER_ODM
     tables:
@@ -18,3 +38,6 @@ sources:
 models:
   - name: stg_users
     description: Cleans user attributes and enriches users with department and process-role details.
+  - name: Leads
+    description: Cleans and enriches lead records with location, company, taxonomy, and user attributes.
+
